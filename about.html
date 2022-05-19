@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body{
+    margin:0;
+    padding:0;
+    background-image:url(background.jpeg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+.glass{
+    position:relative;
+    width:80%;
+    height:1000px;
+    background-color:rgba(255, 255, 255, 0.680);
+    box-shadow:0 2px 15px rgba(0,0,0,0.3);
+    position:relative;
+    top:40%;
+    left:170px;
+}
+.glass::before{
+width:100%;
+height:109%;
+background-image:url(background.jpeg);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100%, 100%;
+content:'';
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+}
+.glass h1{
+    font-family:alisandra demo;
+    font-weight:normal;
+    font-size:100px;
+    color:#000;
+    margin-left:110px;
+    margin-top:35px;
+    line-height:1.5;
+    text-shadow:3px 3px 52px #000;
+    border-top:80px solid transparent;
+}
+.glass p{
+    font-family:Times;
+    font-weight:normal;
+    font-size:25px;
+    text-align:justify;
+    color:#000;
+    line-height:1.5;
+    width:80%;
+    margin-left:125px;
+    text-shadow:8px 8px 52px #000;
+    margin-top:20px;
+}
+.button{
+    margin-top:-40px;
+    margin-left:170px;
+    position:absolute;
+}
+.button li a{
+    text-decoration:none;
+    color:#fff;
+    background:#5a2a2a;
+    padding:15px 50px;
+    border:2px solid transparent;
+    transition:0.6s ease; 
+    font-size:20px;
+}
+.button li{
+    list-style-type:none;
+}
+.button:hover li a{
+    background-color:#fff;
+    color:#000;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="glass">
+        <h1>About Python Programming</h1>
+        <p><b>
+            Kadalasan, ang mga programmer ay nagugustuhan ang Python dahil sa pagtaas ng produktibidad 
+            na ibinibigay nito. Dahil walang step sa pagsasama-sama, ang ikot ng pag-edit-test-debug ay 
+            napakabilis. 
+        </b></p>
+        <p><b>
+            Sinusuportahan ng Python ang mga module at package, na naghihikayat sa modularity ng program 
+            at muling paggamit ng code. Ang Python interpreter at ang malawak na standard library ay 
+            available sa source o binary form nang walang bayad para sa lahat ng pangunahing platform, at 
+            maaaring malayang ipamahagi.
+        </b></p>
+    </div> 
+    <div class="button">
+        <li><a href="index.html">back</a></li>
+    </div> 
+</body>
+</html>
